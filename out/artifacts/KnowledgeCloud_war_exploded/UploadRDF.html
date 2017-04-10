@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>File Upload</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/upload.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="lib/angular.min.js"></script>
+    <script type="text/javascript" src="js/loadFile.js"></script>
+
+</head>
+<body style="background-color: #99ccee">
+</br>
+<div class="media-heading" align="center" style="background-color: #2b669a;height: 100px;align-content: center"><span style="background-color: transparent"><h2 class="media" style="font-family: cursive">Knowledge Cloud</h2></span></div>
+<div class="container bg-info" ng-controller="UploadController">
+
+    <form method="POST" action="upload" enctype="multipart/form-data" >
+        <table>
+            <tr>
+                <td><h3 class="alert-info">Upload RDF files</h3></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><div>
+                <span class="btn btn-default btn-file btn-lg">
+               <input type="file" name="file" id="file" /> <br/>
+                </span>
+                </div></td>
+                <td><button type="submit" class="btn-group-lg btn-lg btn-primary" value="Upload" name="upload" id="upload">Upload</button></td>
+                <!--ng-click="uploadFile()"-->
+            </tr>
+
+        </table>
+
+    </form>
+</div>
+</body>
+</html>

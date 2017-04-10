@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display Results</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/upload.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="lib/angular.min.js"></script>
+    <script type="text/javascript" src="js/loadFile.js"></script>
+    <script type="text/javascript" src="js/service.js"></script>
+    <script type="text/javascript" src="js/directive.js"></script>
+
+
+</head>
+<body>
+
+<div>
+    <table>
+        <tr><td><label name="fileName" id="file">{{fileName}}</label> </td>
+        <td>Key words : </td>
+            <td><div id="wordCloud" class="" style="width: 550px; height: 350px; position: relative;">"word cloud details"</div> </td>
+        </tr>
+        <tr><td><input type="text" name="txtTagWord"/></td></tr>
+        <tr><td><button type="submit" ng-click="submitTagWord()">Submit</button> </td></tr>
+    </table>
+</div>
+
+</body>
+</html>

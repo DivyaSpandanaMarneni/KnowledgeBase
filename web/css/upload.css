@@ -1,0 +1,13 @@
+html,
+body {
+    height: 100%;
+}
+
+.container {
+    height: 50%;
+    display: flex;
+    width:50%;
+    alignment:cm;
+}
+
+
